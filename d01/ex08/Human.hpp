@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   Human.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/31 05:49:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 21:41:48 by y0ja             ###   ########.fr       */
+/*   Created: 2015/11/01 01:47:22 by y0ja              #+#    #+#             */
+/*   Updated: 2015/11/01 02:25:18 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_HPP
-# define ZOMBIE_EVENT_HPP
+#ifndef HUMAN_HPP
+# define HUMAN_HPP
 
-# include <cstdlib>
-# include "Zombie.hpp"
+# include <iostream>
+# include <string.h>
 
-class ZombieEvent {
+class Human {
 
-public:
-	ZombieEvent( void );
-	~ZombieEvent( void );
+	public:
+	void action(std::string const & action_name, std::string const & target);
 
-	void	setZombieType( std::string type );
-	void	randomChump( void );
-	Zombie	*newZombie( std::string name );
+	private:
+	void meleeAttack(std::string const & target);
+	void rangedAttack(std::string const & target);
+	void intimidatingShout(std::string const & target);
 
-private:
-	std::string	_type;
+	void	(_ptrFunc)(std::string const & target);
+
+
 };
 
 #endif

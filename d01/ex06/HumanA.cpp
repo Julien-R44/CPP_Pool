@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/31 05:49:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 21:41:48 by y0ja             ###   ########.fr       */
+/*   Created: 2015/10/31 23:09:12 by y0ja              #+#    #+#             */
+/*   Updated: 2015/11/01 00:42:44 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_HPP
-# define ZOMBIE_EVENT_HPP
+#include "HumanA.hpp"
 
-# include <cstdlib>
-# include "Zombie.hpp"
+HumanA::HumanA( std::string name, Weapon &weapon ) : _name(name), _weapon(weapon) {
+	return ;
+}
 
-class ZombieEvent {
+HumanA::~HumanA( void ) {
+	return ;
+}
 
-public:
-	ZombieEvent( void );
-	~ZombieEvent( void );
-
-	void	setZombieType( std::string type );
-	void	randomChump( void );
-	Zombie	*newZombie( std::string name );
-
-private:
-	std::string	_type;
-};
-
-#endif
+void			HumanA::attack(void) const {
+	std::cout << this->_name << " attacks with his " << this->_weapon.getType() << std::endl;
+}

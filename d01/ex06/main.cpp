@@ -5,44 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/31 05:49:31 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 22:31:50 by y0ja             ###   ########.fr       */
+/*   Created: 2015/10/31 23:09:15 by y0ja              #+#    #+#             */
+/*   Updated: 2015/11/01 00:45:25 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-#include "ZombieEvent.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
-std::string		itoa(int i)
+int				main(void)
 {
-    std::stringstream s;
-    s << i;
-    return (s.str());
-}
+	{
+		Weapon			club = Weapon("crude spiked club");
+		HumanA			bob("Bob", club);
 
-void			ZombieOnTheHeap(ZombieEvent &event) {
-	Zombie		*ptr;
-	int			i = 0;
-
-	event.setZombieType("HeapZombies");
-	while (i < 4) {
-		ptr = event.newZombie("Zombie" + itoa(i));
-		ptr->announce();
-		delete ptr;
-		i++;
+		bob.attack();
+		club.setType("some other type of club");
+		bob.attack();
 	}
-}
+	{
+		Weapon			club = Weapon("crude spiked club");
+		HumanB			jim("Jim");
 
-int main(void)
-{
-	ZombieEvent event;
-	ZombieOnTheHeap(event);
-	event.setZombieType("RandomChump");
-	event.randomChump();
-	event.randomChump();
-	event.randomChump();
-
-	Zombie zombie1("Zombie0", "StackZombies");
-	zombie1.announce();
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
 	return (0);
 }

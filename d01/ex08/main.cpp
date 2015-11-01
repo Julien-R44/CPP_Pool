@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/31 05:49:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 21:41:48 by y0ja             ###   ########.fr       */
+/*   Created: 2015/11/01 01:47:12 by y0ja              #+#    #+#             */
+/*   Updated: 2015/11/01 02:26:09 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_HPP
-# define ZOMBIE_EVENT_HPP
+#include "Human.hpp"
 
-# include <cstdlib>
-# include "Zombie.hpp"
+int main(void)
+{
+	Human	lePoto;
 
-class ZombieEvent {
+	lePoto.action("meleeAttack", "Haterz");
+	lePoto.action("rangedAttack", "Haterz 2");;
+	lePoto.action("intimidatingShout", "Haterz 3");;
+	lePoto.action("rangedAttack", "Haterz 4");;
+	lePoto.action("intimidatingShout", "Haterz 5");;
+	lePoto.action("meleeAttack", "Haterz 6");
+	lePoto.action("", "Haterzzzz");
 
-public:
-	ZombieEvent( void );
-	~ZombieEvent( void );
-
-	void	setZombieType( std::string type );
-	void	randomChump( void );
-	Zombie	*newZombie( std::string name );
-
-private:
-	std::string	_type;
-};
-
-#endif
+	return (0);
+}

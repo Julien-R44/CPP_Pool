@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.cpp                                    :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/31 05:49:24 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 22:32:15 by y0ja             ###   ########.fr       */
+/*   Created: 2015/10/31 05:49:49 by y0ja              #+#    #+#             */
+/*   Updated: 2015/10/31 22:36:50 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ZombieEvent.hpp"
+#include <iostream>
+#include "Zombie.hpp"
 
 const char g_randomNames[] =
 	"0123456789"
 	"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	"abcdefghijklmnopqrstuvwxyz";
 
-ZombieEvent::ZombieEvent(void) {
-	return ;
-}
 
-ZombieEvent::~ZombieEvent(void) {
-	return ;
-}
-
-void	ZombieEvent::setZombieType(std::string type) {
-	this->_type = type;
-}
-
-void	ZombieEvent::randomChump( void ) {
-	Zombie *zombie;
+Zombie::Zombie(void) : _type("ZombieHorde") {
 	char name[9];
 	int i = 0;
 
@@ -38,16 +27,20 @@ void	ZombieEvent::randomChump( void ) {
 		name[i] = g_randomNames[rand() % sizeof(g_randomNames) - 1];
 	}
 	name[i] = 0;
-
-	zombie = new Zombie(name, this->_type);
-	zombie->announce();
-	delete zombie;
+	this->_name = name;
 	return ;
 }
 
-Zombie	*ZombieEvent::newZombie(std::string name) {
-	Zombie	*ptr;
+Zombie::Zombie(std::string name, std::string type) : _name(name), _type(type) {
+	return ;
+}
 
-	ptr = new Zombie(name, this->_type);
-	return (ptr);
+Zombie::~Zombie(void) {
+	std::cout << "<" << this->_name << "(" << this->_type << ")>";
+	std::cout << " Died." << std::endl;
+}
+
+void	Zombie::announce(void) {
+	std::cout << "<" << this->_name << "(" << this->_type << ")>";
+	std::cout << " Braiiiiiiinnnssss..." << std::endl;
 }

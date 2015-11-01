@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/10/31 05:49:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 21:41:48 by y0ja             ###   ########.fr       */
+/*   Created: 2015/10/31 23:09:54 by y0ja              #+#    #+#             */
+/*   Updated: 2015/11/01 00:44:38 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_EVENT_HPP
-# define ZOMBIE_EVENT_HPP
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
 
-# include <cstdlib>
-# include "Zombie.hpp"
+#include <iostream>
 
-class ZombieEvent {
+class Weapon {
 
 public:
-	ZombieEvent( void );
-	~ZombieEvent( void );
+	Weapon( std::string type );
+	~Weapon( void );
 
-	void	setZombieType( std::string type );
-	void	randomChump( void );
-	Zombie	*newZombie( std::string name );
+	const std::string	&getType( void ) const;
+	void				setType(std::string str);
 
 private:
-	std::string	_type;
+	std::string _type;
+
 };
+
 
 #endif
