@@ -1,7 +1,7 @@
 all: make
 
 make:
-	g++ -Wall -Wextra -Werror megaphone.cpp -o megaphone
+	clang++ -Wall -Wextra -Werror megaphone.cpp -o megaphone
 
 re: all
 
