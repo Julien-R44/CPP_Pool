@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Account.class.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/31 03:43:11 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/01 04:07:08 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/02 22:33:13 by jripoute         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Account.class.hpp"
 
-Account::Account(int initial_deposit) : _amount(initial_deposit), _accountIndex(Account::_nbAccounts) {
+Account::Account(int initial_deposit) : _accountIndex(Account::_nbAccounts), _amount(initial_deposit), _nbDeposits(0), _nbWithdrawals(0) {
 	Account::_nbAccounts += 1;
 	Account::_totalAmount += this->_amount;
 
