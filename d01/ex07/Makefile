@@ -1,7 +1,7 @@
 all: make
 
 make:
-	g++ -Wall -Wextra -Werror main.cpp -o replace
+	clang++ -Wall -Wextra -Werror main.cpp -o replace
 
 re: all
 

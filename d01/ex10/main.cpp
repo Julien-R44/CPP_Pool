@@ -6,7 +6,7 @@
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/01 04:11:21 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/01 04:47:05 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/03 11:15:25 by jripoute         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int main(int ac, char const **av) {
 	std::istream	&in = std::cin;
 	std::string		str;
 
+	(void)ac;
 	if (av[1]) {
 		std::ifstream ifs(av[1]);
 
