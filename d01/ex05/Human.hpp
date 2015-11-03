@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Human.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/31 22:45:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 23:01:20 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/03 09:17:37 by jripoute         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	~Human( void );
 
 	std::string		identify( void ) const;
-	const Brain		getBrain( void ) const;
+	const Brain		&getBrain( void ) const;
 
 private:
 	const Brain _brain;

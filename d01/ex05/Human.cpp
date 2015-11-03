@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Human.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/31 22:45:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/10/31 23:02:10 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/03 09:17:14 by jripoute         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Human::~Human( void ) {
 	return ;
 }
 
-const Brain		Human::getBrain( void ) const {
+const Brain		&Human::getBrain( void ) const {
 	return (this->_brain);
 }
 
