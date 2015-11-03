@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.class.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/01 05:26:18 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/02 06:50:25 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/03 00:08:51 by jripoute         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ public:
 
 	// Operators overloading
 	Fixed &		operator=( Fixed const & rhs );
-
 
 private:
 	int					_rawBits;
