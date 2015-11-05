@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
+/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/03 04:50:35 by jripoute          #+#    #+#             */
-/*   Updated: 2015/11/03 06:01:26 by jripoute         ###   ########.fr       */
+/*   Updated: 2015/11/05 03:05:55 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ public:
 	void			beRepaired( unsigned int amount );
 
 	void			debugDisplay( void ) const;
-	void			vaulthunter_dot_exe( std::string const & target);
 
 	ClapTrap &		operator=( ClapTrap const & rhs );
 

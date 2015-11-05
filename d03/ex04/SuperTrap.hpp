@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SuperTrap.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
+/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/03 08:57:58 by jripoute          #+#    #+#             */
-/*   Updated: 2015/11/03 12:46:28 by jripoute         ###   ########.fr       */
+/*   Updated: 2015/11/05 03:09:50 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class SuperTrap : public FragTrap, public NinjaTrap {
 
 public:
 	SuperTrap( std::string name );
-	// SuperTrap( SuperTrap const & src );
+	SuperTrap( SuperTrap const & src );
 	~SuperTrap( void );
 
 };

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   NinjaTrap.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jripoute <jripoute@student.42.fr>          +#+  +:+       +#+        */
+/*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/03 08:24:03 by jripoute          #+#    #+#             */
-/*   Updated: 2015/11/03 08:54:06 by jripoute         ###   ########.fr       */
+/*   Updated: 2015/11/05 03:10:20 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include "ScavTrap.hpp"
 # include "ClapTrap.hpp"
 
-class NinjaTrap : public ClapTrap {
+class NinjaTrap : virtual public ClapTrap {
 
 public:
 	NinjaTrap( std::string name );
