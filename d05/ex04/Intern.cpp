@@ -6,7 +6,7 @@
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 01:37:23 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/10 03:27:08 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/10 17:43:51 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ Intern::~Intern( void ) {
 }
 
 Intern &	Intern::operator=( Intern const & src ) {
+	(void)src;
 	return *this;
 }
 

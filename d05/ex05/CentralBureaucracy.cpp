@@ -6,7 +6,7 @@
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 03:37:09 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/10 04:41:22 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/10 17:45:14 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ CentralBureaucracy::~CentralBureaucracy( void ) {
 }
 
 CentralBureaucracy &	CentralBureaucracy::operator=( CentralBureaucracy const & src ) {
+	(void)src;
 	return *this;
 }
 

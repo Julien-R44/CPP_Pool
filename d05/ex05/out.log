@@ -1,0 +1,32 @@
+IncompleteOfficeException
+IncompleteOfficeException
+Intern creates <shrubbery creation>
+Bureaucrat2:2 signs form [Johny]
+Bureaucrat1:2 executes <Johny>
+IncompleteOfficeException
+IncompleteOfficeException
+IncompleteOfficeException
+Intern creates <shrubbery creation>
+Bureaucrat2:6 signs form [Johny]
+Bureaucrat1:6 executes <Johny>
+IncompleteOfficeException
+IncompleteOfficeException
+Intern creates <robotomy request>
+Bureaucrat2:9 signs form [Johny]
+SOME DRILLING NOISES BRUH
+Johny has been robotomized succesfully.
+Bureaucrat1:9 executes <Johny>
+IncompleteOfficeException
+IncompleteOfficeException
+Intern creates <robotomy request>
+Bureaucrat2:12 signs form [Johny]
+SOME DRILLING NOISES BRUH
+Johny has been failed.
+Bureaucrat1:12 executes <Johny>
+IncompleteOfficeException
+IncompleteOfficeException
+IncompleteOfficeException
+IncompleteOfficeException
+IncompleteOfficeException
+IncompleteOfficeException
+InvalidFormNameException

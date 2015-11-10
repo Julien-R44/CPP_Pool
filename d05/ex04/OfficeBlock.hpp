@@ -6,7 +6,7 @@
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/10 02:10:29 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/10 03:30:53 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/10 17:44:04 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	};
 	OfficeBlock( void );
 	OfficeBlock( Intern *intern, Bureaucrat *signer, Bureaucrat *executor );
-	~OfficeBlock( void );
+	virtual ~OfficeBlock( void );
 
 	void		doBureaucracy(std::string formName, std::string target) const throw(IncompleteOfficeException, Intern::InvalidFormNameException, Form::GradeTooLowException);
 	void		setIntern(Intern & intern);

@@ -6,7 +6,7 @@
 /*   By: y0ja <y0ja@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/09 08:44:36 by y0ja              #+#    #+#             */
-/*   Updated: 2015/11/10 01:08:24 by y0ja             ###   ########.fr       */
+/*   Updated: 2015/11/10 17:42:53 by y0ja             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ public:
 
 	Form( std::string name, int signGrade, int execGrade ) throw(GradeTooLowException, GradeTooHighException);
 	Form(Form const & src);
-	~Form( void );
+	virtual ~Form( void );
 
 	Form &				operator=( Form const & src );
 	virtual void		execute(Bureaucrat const & executor) const;

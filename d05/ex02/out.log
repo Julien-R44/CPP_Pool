@@ -1,0 +1,14 @@
+John Doe cannot execute three because Form::NotSignedException
+Form::NotSignedException
+Name [Three], signed ? [false], sign required grade [145], execute required grade [137]
+<Sisi>, bureaucrat grade <140>
+Sisi cannot execute Three because Form::GradeTooLowException
+Form::GradeTooLowException
+Name [robot], signed ? [false], sign required grade [72], execute required grade [45]
+Name [Presidential], signed ? [false], sign required grade [25], execute required grade [5]
+John doesigns form [robot]
+SOME DRILLING NOISES BRUH
+robot has been failed.
+SOME DRILLING NOISES BRUH
+robot has been robotomized succesfully.
+Presidential has been pardoned by Zafod Beeblebrox.
