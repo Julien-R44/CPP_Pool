@@ -1,3 +1,6 @@
 [submodule "ft_retro"]
 	path = ft_retro
 	url = git://github.com/y0ja/ft_retro.git
+[submodule "ft_gkrellm"]
+	path = ft_gkrellm
+	url = git://github.com/y0ja/ft_gkrellm.git
